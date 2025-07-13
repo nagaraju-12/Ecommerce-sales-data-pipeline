@@ -1,0 +1,15 @@
+Output Files (Generated in Databricks):
+
+1. Cleaned Data Parquet:
+   Location: /FileStore/tables/cleaned_data_parquet/
+
+2. Summarry Data Parquet:
+   Location: /FileStore/tables/summarry_data_parquet/
+
+Note:
+These files are saved as Parquet format within Databricks FileStore.
+
+To read them in Databricks:
+
+df = spark.read.parquet("/FileStore/tables/summarry_data_parquet")
+df.show()
