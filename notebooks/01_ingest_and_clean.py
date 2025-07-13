@@ -2,18 +2,14 @@
 from pyspark.sql import SparkSession
 spark=SparkSession.builder.appName("EcommercePipeline")\
     .getOrCreate()
+# COMMAND ----------
 
+#df=spark.read.format("csv").option("header","True").option("inferSchema","True").load("dbfs:/FileStore/tables/ecommerce_raw_data.csv")
+#df.display()
 
 # COMMAND ----------
 
-df=spark.read.format("csv").option("header","True").option("inferSchema","True").load("dbfs:/FileStore/tables/ecommerce_raw_data.csv")
-df.display()
-
-
-
-# COMMAND ----------
-
-df=df.fillna({'product':'Notavaliable','region':'Notavaliable','category':'Notavaliable'}).display()
+#df=df.fillna({'product':'Notavaliable','region':'Notavaliable','category':'Notavaliable'}).display()
 
 # COMMAND ----------
 
@@ -60,12 +56,8 @@ df_clean.display()
 
 
 
-
-
 # COMMAND ----------
-
 #dbutils.fs.ls("dbfs:/FileStore/tables/ecommerce_raw_data.csv")
-
 
 # COMMAND ----------
 
