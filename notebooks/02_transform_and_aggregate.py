@@ -15,8 +15,8 @@ df_summarry.display()
 
 # COMMAND ----------
 
-# ✅ Job logging
-print("✅ TRANSFORMATION COMPLETE")
-print("📊 Summarry Row Count:", df_summarry.count())
-print("📦 Sample Aggregated Records:")
+#  Job logging
+print(" TRANSFORMATION COMPLETE")
+print(" Summarry Row Count:", df_summarry.count())
+print(" Sample Aggregated Records:")
 df_summarry.show()
