@@ -101,8 +101,8 @@ df.printSchema()
 
 # COMMAND ----------
 
-# ✅ Job logging
-print("✅ CLEANING COMPLETE")
-print("📊 Cleaned Data Row Count:", df_clean.count())
-print("📦 Sample Cleaned Records:")
+#  Job logging
+print(" CLEANING COMPLETE")
+print(" Cleaned Data Row Count:", df_clean.count())
+print(" Sample Cleaned Records:")
 df_clean.show()
