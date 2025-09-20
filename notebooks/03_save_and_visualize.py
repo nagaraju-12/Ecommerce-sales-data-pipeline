@@ -51,11 +51,11 @@ df_summarry.display()
 
 # COMMAND ----------
 
-# ✅ Job logging
-print("✅ FINAL SAVE COMPLETE")
-print("📁 Parquet File Saved: /FileStore/tables/summarry_data_parquet")
+#  Job logging
+print(" FINAL SAVE COMPLETE")
+print(" Parquet File Saved: /FileStore/tables/summarry_data_parquet")
 
 # Confirm saved file works
 df_result = spark.read.parquet("/FileStore/tables/summarry_data_parquet")
-print("📊 Saved Summarry Row Count:", df_result.count())
+print(" Saved Summarry Row Count:", df_result.count())
 df_result.show()
